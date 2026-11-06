@@ -1,18 +1,20 @@
 public class Shapes {
     public static void main(String[] args) {
-        // Task 1: Draw a regular shape
+        Turtle john = new Turtle();
+        int n = 3;
+        int s = 12;
+        int tC = 0;
 
+        for (int j = 0; j < s; j++) {
+            for (int i = 0; i < n; i++) {
+                john.forward(100);
+                john.left(360 / n);
+                tC++;
+            }
+            john.left(360 / s);
+            tC++;
+        }   
 
-        // Task 2: Draw a regular shape many times
-
-
-        // Task 3: How many times does Turtle turn!
-
-
-        // Extension 1:
-
-
-        // Extension 2:
-
+        System.out.println(tC);
     }
 }
